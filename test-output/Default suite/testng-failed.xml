@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gettingstarted.ValidatingResponse">
+      <class name="gettingstarted.SimplePOSTTest">
         <methods>
-          <include name="validateStatusCode_inValid"/>
+          <include name="invalidPOSTTest"/>
         </methods>
-      </class> <!-- gettingstarted.ValidatingResponse -->
+      </class> <!-- gettingstarted.SimplePOSTTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
