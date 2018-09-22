@@ -56,7 +56,7 @@ public class ValidateResponseStatus {
 		// we have received from the server
 		int statusCode = response.getStatusCode();
 		
-		Assert.assertEquals(statusCode, 200, "Status not 200");
+		Assert.assertEquals(statusCode, 200, "Status not as expected");
 
 	}
 	
