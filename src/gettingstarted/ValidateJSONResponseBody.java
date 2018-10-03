@@ -18,6 +18,8 @@ public class ValidateJSONResponseBody {
 
 		JsonPath jsonPathEvaluator = response.jsonPath();
 		
+		// Then simply query the JsonPath object to get a String value of the node
+		// specified by JsonPath: City (Note: You should not put $. in the Java code)
 		// Let us print the city variable to see what we got
 		System.out.println("City received from Response: " + jsonPathEvaluator.get("City"));
 	 
