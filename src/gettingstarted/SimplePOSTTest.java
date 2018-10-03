@@ -21,7 +21,7 @@ public class SimplePOSTTest {
 		// JSONObject is a class that represents a simple
 		// JSON. We can add Key - Value pairs using the put method
 		
-		JSONObject requestParams = new JSONObject ();
+		JSONObject requestParams = new JSONObject();
 		requestParams.put("FirstName", "John");
 		requestParams.put("LastName", "Smith");
 		requestParams.put("UserName", "JS0811");
