@@ -11,7 +11,7 @@ import io.restassured.specification.RequestSpecification;
 @SuppressWarnings("unchecked")
 public class SimplePOSTTest {
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void postTest() {
 		
 		RestAssured.baseURI = "http://restapi.demoqa.com/customer";
@@ -45,7 +45,7 @@ public class SimplePOSTTest {
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void invalidPOSTTest() {
 		
 		RestAssured.baseURI = "http://restapi.demoqa.com/customer";
