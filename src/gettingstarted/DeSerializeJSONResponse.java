@@ -25,19 +25,30 @@ public class DeSerializeJSONResponse {
 		requestParams.put("Password", "password1");	
 		requestParams.put("Email",  "ed26dff39@gmail.com");
 
-		request.header("Content-Type", "application/json");
-		
 		request.body(requestParams.toJSONString());
 		Response response = request.post("/register");
 
 		ResponseBody body = response.getBody();
+		System.out.println(response.body().asString());
 
-		// DeSerialize the Response body into RegistrationSuccessResponse
-		RegistrationSuccessResponse responseBody = body.as(RegistrationSuccessResponse.class);
+		if(response.statusCode() == 200)// if failure
+		{
+			// DeSerialize the Response body into RegistrationFailureResponse
+			RegistrationFailureResponse responseBody = body.as(RegistrationFailureResponse.class);
 
-		// Use the RegistrationSuccessResponse class instance to Assert the values of 
-		// Response.
-		Assert.assertEquals("OPERATION_SUCCESS", responseBody.SuccessCode);
-		Assert.assertEquals("Operation completed successfully", responseBody.Message);
+			// Use the RegistrationFailureResponse class instance to Assert the values of 
+			// Response.
+			Assert.assertEquals("User already exists", responseBody.FaultId);
+			Assert.assertEquals("FAULT_USER_ALREADY_EXISTS", responseBody.fault);	
+		}
+		else if (response.statusCode() == 201)//if success
+		{
+			// DeSerialize the Response body into RegistrationSuccessResponse
+			RegistrationSuccessResponse responseBody = body.as(RegistrationSuccessResponse.class);
+			// Use the RegistrationSuccessResponse class instance to Assert the values of 
+			// Response.
+			Assert.assertEquals("OPERATION_SUCCESS", responseBody.SuccessCode);
+			Assert.assertEquals("Operation completed successfully", responseBody.Message);	
+		}	
 	}
 }
