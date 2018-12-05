@@ -1,4 +1,4 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
 import org.testng.annotations.Test;
 

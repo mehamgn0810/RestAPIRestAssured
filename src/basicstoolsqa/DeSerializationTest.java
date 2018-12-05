@@ -1,6 +1,6 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
-import static gettingstartedtoolsqa.SerializationTest.serializeToFile;
+import static basicstoolsqa.SerializationTest.serializeToFile;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

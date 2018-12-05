@@ -1,4 +1,4 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

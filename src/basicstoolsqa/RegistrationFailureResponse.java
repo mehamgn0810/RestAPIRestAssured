@@ -1,4 +1,4 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
 public class RegistrationFailureResponse {
 

@@ -1,4 +1,4 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package gettingstartedtoolsqa;
+package basicstoolsqa;
 
 import org.json.simple.JSONObject;
 import org.testng.Assert;
