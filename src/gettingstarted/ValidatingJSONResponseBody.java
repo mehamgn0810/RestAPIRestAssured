@@ -13,7 +13,7 @@ public class ValidatingJSONResponseBody {
 		RestAssured.baseURI = "https://www.metaweather.com";
 		
 		given().
-			param("query", "san").
+			param("query", "San Antonio").
 			
 		when().
 			get("/api/location/search").
