@@ -1,4 +1,4 @@
-package gettingstarted;
+package gettingstartedtoolsqa;
 
 public class RegistrationSuccessResponse {
 
