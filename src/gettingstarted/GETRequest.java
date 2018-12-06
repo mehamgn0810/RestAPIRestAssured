@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.given;
 
-public class RequestAndResponse {
+public class GETRequest {
 	
 	//GetBookByID
 
